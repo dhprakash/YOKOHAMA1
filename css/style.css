@@ -1,0 +1,239 @@
+@charset "utf-8";
+/* CSS Document */
+body{ font-size:12px; font-family: 'Roboto', sans-serif;}
+#wrapper{ width:100%;}
+ul, li{ margin:0; padding:0;}
+
+/*TopBox*/
+.topBox{ width:100%; border-bottom:#cacaca solid 1px; padding:10px 0; background:#f3f3f3}
+.topBox h2{ text-align:right; font-size: 12px; color:#7d7d7d; font-family: 'Roboto', sans-serif;}
+.topBox h2 span{ color:#df0514; font-size:13px; font-weight:600; font-family: 'Roboto', sans-serif;}
+
+/*sticky header position*/
+.sticky.is-sticky { position: fixed;  left: 0; right: 0; top: 0; z-index: 1000; width: 100%; background:#fff; border-bottom:#df0514 solid 2px}
+nav {background: #fff; min-height: 85px;}
+.nav-link{ font-size:14px; padding:0 15px !important; color:#000 !important}
+.nav-link:hover, .nav-link.active{ color:#df0514 !important}
+
+
+/***********Banner Box***********/
+.bannerBox{ width:100%; background:url(../images/banner.jpg) no-repeat; background-size:100%; height:455px; }
+.bannerBox .formBox{ max-width:404px; background:#fff; padding:30px; font-family: 'Roboto', sans-serif; margin:20px; -webkit-border-top-left-radius: 10px;-webkit-border-top-right-radius: 10px;-moz-border-radius-topleft: 10px;-moz-border-radius-topright: 10px;border-top-left-radius: 10px;border-top-right-radius: 10px;}
+.bannerBox .formBox h2{ color:#df0514; font-size:15px; font-weight:600; font-family: 'Roboto', sans-serif;}
+.bannerBox .formBox p{ color:#000; font-size:12px; font-family: 'Roboto', sans-serif;}
+.bannerBox .formBox ul{ list-style:none}
+.bannerBox .formBox li{ color:#ededed; font-size:11px; color:#858585; border-bottom:#ededed solid 1px; padding:6px 0}
+.bannerBox .formBox li span{ color:#000; font-size:11px; text-align:right; float:right}
+.bannerBox .formBox .list{ padding-right:5px}
+.bannerBox .formBox h3{ color:#13ca00; font-size:16px; font-weight:600; font-family: 'Roboto', sans-serif; text-align:center; padding:6px 0; border-bottom:#000 solid 1px; border-top:#000 solid 1px; margin:10px 0}
+.bannerBox .formBox .direction{ border-radius:15px; padding:7px; border:none; cursor:pointer; color:#fff; width:100%; text-transform:uppercase; background:url(../images/direction.png) no-repeat left 30% center #df0514; margin-bottom:20px}
+.bannerBox .userBox { background: #e9e9e9; width: 100%; padding: 10px 30px; position: absolute; left: 0; -webkit-border-bottom-right-radius: 10px;
+-webkit-border-bottom-left-radius: 10px;-moz-border-radius-bottomright: 10px;-moz-border-radius-bottomleft: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;}
+.bannerBox .formBox .direction:hover{ background:url(../images/direction.png) no-repeat left 30% center #000;}
+.bannerBox .userBox .left{ width:288px; float:left; font-size:14px}
+.bannerBox .userBox .right{ width:auto; float:left; margin-top:8px}
+.bannerBox .formBox .leftBox{ width:100%; float: left;}
+.bannerBox .formBox .leftBox .left{ width:80%; float:left;}
+.bannerBox .formBox .leftBox .right{ width:auto; float:right; }
+.navbar-nav{ float: none !important;}
+
+/***********Img Box***********/
+.imgBox{ width:100%; padding:50px 0 30px 0 }
+
+/***********About Box***********/
+.aboutBox{ width:100%; padding:0px 0 50px 0; }
+.aboutBox .inner{ border-top:#f4f4f4 solid 4px;  border-bottom:#f4f4f4 solid 4px;}
+.aboutBox .inner .blackBox{ background:#000; padding:30px}
+.aboutBox .inner .blackBox h2 { color: #df0514; font-size: 16px; font-weight: 600; font-family: 'Roboto', sans-serif; position:relative; padding-left:14px; width:104px; padding-bottom:15px}
+.aboutBox .inner .blackBox h2::before { content: "";position: absolute; left: 0; background: #fff; width: 3px; height: 19px;}
+.aboutBox .inner .blackBox h2::after { content: "";position: absolute; right: 0; background: #fff; width: 2px; height: 19px;}
+.aboutBox .inner .blackBox p { color: #fff; font-size: 13px; font-family: 'Roboto', sans-serif; text-align:justify; line-height:24px}
+.aboutBox .inner .listBox{ width:100%}
+.aboutBox .inner .listBox h2 { color: #df0514; font-size: 16px; font-weight: 600;font-family: 'Roboto', sans-serif; padding: 15px 0; border-bottom:#adadad solid 1px}
+.aboutBox .inner .listBox ul{ list-style:none}
+.aboutBox .inner .listBox li{ color:#000; font-size:12px; padding:6px 0; border-bottom:#dadada dashed 1px}
+.aboutBox .inner .listBox li span{ color:#000; font-size:12px; float:right}
+.aboutBox .inner .listBox p { color: #000; font-size: 13px; font-family: 'Roboto', sans-serif; text-align:justify; line-height:22px; margin:0 0 10px 0}
+.aboutBox .inner .listBox h3{ color: #a0a0a0; font-size: 14px; font-family: 'Roboto', sans-serif; text-align:justify; margin:10px 0 25px 0}
+.aboutBox .inner .btnBox{}
+.aboutBox .inner a.submit { border: none;  cursor: pointer; color: #fff; text-transform: uppercase; margin-bottom: 20px; background:#df0514; font-size:11px; padding:5px 20px}
+.aboutBox .inner a.view { border: none;  cursor: pointer; color: #fff; text-transform: uppercase; margin-bottom: 20px; background:#000; font-size:11px; padding:5px 20px}
+
+/***********slide out***********/
+.slide-out { position: fixed;z-index: 9;border: #df0514 solid 2px; right: -300px; transition: .5s ease-in-out; top: 28%;width: 300px; background: #fff;  padding: 20px; min-height: 250px; padding-right:60px; border-radius:20px}
+.form-control.input{ height:30px}
+.click {position: absolute; right: 0; z-index: 9; top: 30%;}
+.close { font-size: 1.5rem; font-weight: 700; line-height: 1; color: #000; text-shadow: 0 1px 0 #fff; opacity: .5; position: absolute; right: 47px; top: 10px;}
+
+/***********Social Box***********/
+.socialBox{ width:100%; padding:50px 0 50px 0; background:#f6f6f6 }
+.socialBox .white { background: #fff; padding-bottom:20p; position:relative; min-height:200px }
+.socialBox h2 { color: #000; text-align:center;font-size: 26px; padding-bottom:10px; font-weight: 600; font-family: 'Roboto', sans-serif;}
+.socialBox p { color: #000; font-size: 11px; font-family: 'Roboto', sans-serif; text-align:center; line-height:20px; padding: 15px 15px 0 15px;}
+.socialBox a { color: #df0514; font-size: 11px; font-family: 'Roboto', sans-serif; text-align:center; line-height:20px; }
+.socialBox .icon{ position:absolute; bottom:0; border-top:#ededed solid 1px; left:10px; right:10px; text-align:center }
+.socialBox .icon i { color: #c0c0c0; font-size: 16px; margin-top: 10px; padding-right: 5px;}
+.socialBox .icon i:hover{ color:#000}
+.socialBox h3{ text-align:center; margin-top:15px}
+.socialBox h3 a{  color: #000; font-size: 13px; font-family: 'Roboto', sans-serif; text-align:center; line-height:20px; text-align:center }
+
+/***********Social Box***********/
+.findBox{ width:100%; padding:50px 0 50px 0; background:#000000 }
+.findBox h2 { color: #fff; text-align:center;font-size: 15px; padding-bottom:20px; font-weight: 600; font-family: 'Roboto', sans-serif; text-transform:uppercase}
+.findBox ul{ list-style:none}
+.findBox li{ display:inline-block; margin-right: 40px;}
+.findBox .red{ color:#df0514; font-size:24px; padding-right:5px}
+
+
+/***********Social Box***********/
+.categoriesBox{ width:100%; padding:50px 0 50px 0; background:#fff }
+.categoriesBox h2 { color: #000; font-size: 16px; font-family: 'Roboto', sans-serif; padding: 8px 0; border-bottom: #adadad solid 1px;}
+.categoriesBox .scroller {width: 300px;height: 130px;overflow-y: scroll;  scrollbar-color: #7f7f7f #e3e2e2; border-radius:10px; scrollbar-width: thin;}
+.categoriesBox .scroller ul{ list-style:none}
+.categoriesBox .scroller li{ display:inline-block;}
+.categoriesBox .scroller li a{ background: #cacaca;color: #000;border-radius: 13px;font-size: 12px;font-family: 'Roboto', sans-serif;display: block;margin: 7px 3px 7px 0;padding: 5px 9px; }
+.categoriesBox .scroller li a:hover{ text-decoration:none}
+
+
+
+/***********Social Box***********/
+.tyresBox{ width:100%; padding:30px 0 30px 0; background:#fff }
+.tyresBox h2 { color: #df0514; text-align:center;font-size: 26px; padding-bottom:10px; font-weight: 600; font-family: 'Roboto', sans-serif;}
+.tyresBox .main{ position:relative; display: flex;flex-wrap: wrap;}
+.tyresBox .main .inner{flex-basis: 32%;max-width: 265px;display: flex;flex-direction: column}
+.tyresBox .main h3 { padding: 0 20px; color: #000; font-size: 13px;font-family: 'Roboto', sans-serif; text-align: center; position: relative; bottom: 39px; left: 0;right: 0; margin: auto;
+ width: auto; line-height: normal;}
+.tyresBox .main{ width:100%}
+
+
+
+/***********Social Box***********/
+.branchBox{ width:100%; padding:50px 0 50px 0; background:#f6f6f6 }
+.branchBox h2 { color: #000; text-align:center;font-size: 26px; padding-bottom:10px; font-weight: 600; font-family: 'Roboto', sans-serif;}
+.branchBox .inner{ width:100%}
+.botBox{ max-width:320px; border:#ccc solid 1px; background:#fff; padding:15px} 
+.branchBox .mainBrach{ max-width:320px; border:#ccc solid 1px; background:#fff; padding:15px} 
+.branchBox .mainBrach h3 { color: #000; font-size: 14px; font-family: 'Roboto', sans-serif; text-align:center; line-height:20px;}
+.branchBox .mainBrach p { padding-top:8px;color: #000; font-size: 11px; font-family: 'Roboto', sans-serif; text-align:center; line-height:20px;}
+.branchBox .mainBrach h4{ padding-top:10px; border-top: #ccc solid 1px; color: #000; font-size: 12px; font-family: 'Roboto', sans-serif; text-align:center; line-height:20px;}
+.branchBox .mainBrach ul{ list-style:none}
+.branchBox .mainBrach li{ color: #000; font-size: 11px; font-family: 'Roboto', sans-serif; }
+.branchBox .mainBrach li span{ color: #000; font-size: 11px; font-family: 'Roboto', sans-serif; float:right }
+.regular { width: 100%; margin: 0 auto}
+.regular .slick-prev, .regular .slick-next {   top: 40%;    }
+.regular .slick-prev { left: -5%; background: url(../images/arrow-left.png) left top no-repeat;background-size: cover; width: 24px; height: 35px;}
+.regular .slick-next {right: -5%; width: 24px;height:35px;background: url(../images/arrow-right.png) left top no-repeat; }
+.regular .slick-next:hover { right: -5%; width: 24px; height:35px;background: url(../images/arrow-right.png) left top no-repeat;}
+.regular .slick-prev:before, .regular .slick-next:before { content: ''; }
+.regular .slick-prev:hover, .regular .slick-prev:focus { color: transparent; outline: none; background: url(../images/arrow-left.png) left top no-repeat;}
+.regular .slick-next:hover, .regular .slick-next:focus{  background: url(../images/arrow-right.png) left top no-repeat;}
+.slider {  width: 100%; margin: 0 auto;}
+.slick-slide {  margin: 0px 10px;}
+.slick-slide img {  width: 100%;}
+.slick-prev:before, .slick-next:before { color: black;}
+
+
+
+
+/***********Social Box***********/
+.BlogBox{ width:100%; padding:30px 0 30px 0; background:#fff }
+.BlogBox h2 { color: #df0514; text-align:center;font-size: 26px; padding-bottom:10px; font-weight: 600; font-family: 'Roboto', sans-serif;}
+.BlogBox .inner{ width:100%}
+.BlogBox .mainBrach{  border:#ccc solid 1px; background:#fff; padding:15px} 
+
+.BlogBox .event { width: 100px; height: 22px; line-height: 22px; background: #71d3cf; color: #fff;font-size: 11px; font-family: 'Roboto', sans-serif;margin: 10px 0;
+ text-align: center; font-weight:600}
+.BlogBox h3 { color: #2e2e2e; text-align:left;font-size: 22px; font-weight: 600; font-family: 'Roboto', sans-serif;}
+.BlogBox h4{ color: #000; font-size: 11px; font-family: 'Roboto', sans-serif; text-align:left; line-height:20px;}
+.BlogBox p { padding-top:3px;color: #696969; font-size: 11px; font-family: 'Roboto', sans-serif; text-align:justify; line-height:20px;}
+.BlogBox a.read { color: #2e2e2e; text-align:left;font-size: 12px; font-weight: 600; font-family: 'Roboto', sans-serif;}
+ 
+.regular1 { width: 100%; margin: 0 auto}
+.regular1 .slick-prev, .regular1 .slick-next {   top: 40%;    }
+.regular1 .slick-prev { left: -5%; background: url(../images/arrow-left.png) left top no-repeat;background-size: cover; width: 24px; height: 35px;}
+.regular1 .slick-next {right: -5%; width: 24px;height:35px;background: url(../images/arrow-right.png) left top no-repeat; }
+.regular1 .slick-next:hover { right: -5%; width: 24px; height:35px;background: url(../images/arrow-right.png) left top no-repeat;}
+.regular1 .slick-prev:before, .regular1 .slick-next:before { content: ''; }
+.regular1 .slick-prev:hover, .regular1 .slick-prev:focus { color: transparent; outline: none; background: url(../images/arrow-left.png) left top no-repeat;}
+.regular1 .slick-next:hover, .regular1 .slick-next:focus{  background: url(../images/arrow-right.png) left top no-repeat;}
+
+
+
+
+
+
+/***********Social Box***********/
+.bottBox { width: 100%;  background: #333333; float: left; padding: 20px 0; padding-bottom: 30px;}
+.bottBox ul{ list-style:none}
+.bottBox li{ float:left; margin-right:10px }
+
+
+
+
+/***********Social Box***********/
+.footer{ width:100%;  padding:30px 0;  float: left;background:#262626 }
+.footer h2 { color: #fff; text-align: left;  font-size: 12px; font-weight: 600; font-family: 'Roboto', sans-serif; margin-bottom:30px;}
+.footer ul{ list-style:none}
+.footer li{}
+.footer li a{ padding-top:3px;color: #e3e2e2; font-size: 11px; font-family: 'Roboto', sans-serif; text-align:justify; line-height:20px;}  
+.footer  h3{ font-weight:600;  color: #df0514; font-size: 12px; font-family: 'Roboto', sans-serif; text-align: left;line-height: 20px;}
+.red{ color:#df0514}
+
+
+
+@media only screen and (max-width: 1100px) {
+.bannerBox .userBox .left { width: 278px;}
+.tyresBox .main .inner { flex-basis: 32%; max-width: 230px;}
+.findBox li {  margin-right: 7px;}
+}
+
+@media only screen and (max-width:990px) {
+.bannerBox .formBox{ padding:14px}
+.bannerBox .userBox .left { width: 278px;}
+.tyresBox .main .inner { flex-basis: 32%; max-width: 230px;}
+.socialBox .white { padding-bottom: 20p; min-height: 300px;}
+.findBox li {  margin-right: 32px; margin-bottom: 30px;}
+.categoriesBox .scroller { width: 210px;}
+}
+
+@media only screen and (max-width: 767px) {
+ 
+.navbar-brand{ width:50%;}
+.navbar img{ width:100%; height:auto}
+.nav-link{ font-size:14px; padding:15px !important; color:#000 !important}
+.bannerBox .userBox{ padding:10px 20px;}
+.bannerBox .userBox .left { width: auto;font-size: 12px; padding-right: 18px;}
+.bannerBox{ background-size: 100% 100%;height: 100%;}
+.bannerBox .formBox{ padding:10px 20px 70px 20px}
+.mainDiv{ margin-bottom:20px}
+.socialBox .white { min-height: inherit;}
+.socialBox .icon{ position:relative;}
+.tyresBox .main .inner { flex-basis: 100%;  max-width: 100%;   }
+.tyresBox .main .inner img{ width:100%}
+.findBox li { display: inline-block; margin-right: 0; width: 100%; margin-bottom: 10px;}
+.findBox li img{  width: 100%;}
+
+.categoriesBox .scroller {  width: 100%;  margin-bottom: 20px;}
+
+.regular { width: 95%; margin: 0 auto}
+.regular .slick-prev, .regular .slick-next {   top: 40%;    }
+.regular .slick-prev { left: -5%; background: url(../images/arrow-left.png) left top no-repeat;background-size: cover;  width: 14px;height:25px; background-size: 100%;}
+.regular .slick-next {right: -5%; width: 14px;height:25px;background: url(../images/arrow-right.png) left top no-repeat; background-size: 100%;}
+.regular .slick-next:hover { right: -5%;  width: 14px;height:25px;background: url(../images/arrow-right.png) left top no-repeat;background-size: 100%;}
+.regular .slick-prev:before, .regular .slick-next:before { content: ''; }
+.regular .slick-prev:hover, .regular .slick-prev:focus { color: transparent; outline: none; background: url(../images/arrow-left.png) left top no-repeat;background-size: 100%;}
+.regular .slick-next:hover, .regular .slick-next:focus{  background: url(../images/arrow-right.png) left top no-repeat;background-size: 100%;}
+
+
+
+.regular1 { width: 95%; margin: 0 auto}
+.regular1 .slick-prev, .regular1 .slick-next {   top: 40%;    }
+.regular1 .slick-prev { left: -5%; background: url(../images/arrow-left.png) left top no-repeat;background-size: cover;  width: 14px;height:25px; background-size: 100%;}
+.regular1 .slick-next {right: -5%; width: 14px;height:25px;background: url(../images/arrow-right.png) left top no-repeat; background-size: 100%;}
+.regular1 .slick-next:hover { right: -5%;  width: 14px;height:25px;background: url(../images/arrow-right.png) left top no-repeat;background-size: 100%;}
+.regular1 .slick-prev:before, .regular1 .slick-next:before { content: ''; }
+.regular1 .slick-prev:hover, .regular1 .slick-prev:focus { color: transparent; outline: none; background: url(../images/arrow-left.png) left top no-repeat;background-size: 100%;}
+.regular1 .slick-next:hover, .regular1 .slick-next:focus{  background: url(../images/arrow-right.png) left top no-repeat;background-size: 100%;}
+
+
+}
